@@ -14,7 +14,7 @@ class QueryParser
    *
    * @param \string $query_str JSON formatted string
    * @return \string Returns a where clause fragment
-   */d
+   */
   public static function parse($query_str) {
     return QueryParser::toFragment(json_decode($query_str));
   }
